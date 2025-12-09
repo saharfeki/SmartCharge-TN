@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tunisia EV | Interactive Charging Map</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT HERO PANEL -->
+    <div class="hero">
+        <div class="logo">
+            <div class="logo-icon">⚡</div>
+            <div class="logo-text">
+                <h2>Tunisia EV</h2>
+                <p>Interactive Charging Map</p>
+            </div>
+        </div>
+
+        <h1 class="hero-title">
+            Find EV <br> Charging <br>
+            <span>Across Tunisia</span>
+        </h1>
+
+        <p class="hero-desc">
+            Discover, navigate, and plan your electric journey with our 
+            interactive map of charging stations nationwide.
+        </p>
+
+        <div class="hero-features">
+            <div class="feature">🔌 50+ Stations</div>
+            <div class="feature">📡 Real-time Status</div>
+            <div class="feature">🧭 Route Planning</div>
+            <div class="feature">⚡ Fast Charging</div>
+        </div>
+    </div>
+
+    <!-- RIGHT LOGIN PANEL -->
+    <div class="auth-card" id="auth-card">
+
+        <!-- LOGIN FORM -->
+        <div class="form login-form" id="loginForm">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Sign in to access the EV charging map</p>
+
+            <input type="email" id="loginEmail" placeholder="Email Address" required />
+            <input type="password" id="loginPassword" placeholder="Password" required />
+
+            <button class="btn" onclick="login()">Sign In →</button>
+
+            <p class="switch-text">
+                Don't have an account? <span onclick="showSignup()">Sign up</span>
+            </p>
+        </div>
+
+        <!-- SIGNUP FORM -->
+        <div class="form signup-form hidden" id="signupForm">
+            <h2>Create Account</h2>
+            <p class="subtitle">Register to access the EV charging map</p>
+
+            <input type="text" id="signupName" placeholder="Full Name" required />
+            <input type="email" id="signupEmail" placeholder="Email Address" required />
+            <input type="password" id="signupPassword" placeholder="Password" required />
+            <select id="signupVehicle">
+                <option value="" disabled selected>Select Vehicle Type</option>
+                <option>Renault Zoe</option>
+                <option>Hyundai Kona Electric</option>
+                <option>Tesla Model 3</option>
+                <option>BYD Atto 3</option>
+                <option>Other</option>
+            </select>
+
+            <button class="btn" onclick="signup()">Create Account →</button>
+
+            <p class="switch-text">
+                Already have an account? <span onclick="showLogin()">Login</span>
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

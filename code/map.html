@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tunisia EV — Map</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- leaflet.heat for heatmap -->
+  <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+</head>
+<body>
+  <!-- Left Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-top">
+      <div class="brand">
+        <div class="brand-icon">⚡</div>
+        <div>
+          <div class="brand-title">Tunisia EV</div>
+          <div class="brand-sub">Interactive Charging Map</div>
+        </div>
+      </div>
+
+      <div class="user-row">
+        <div id="userName" class="user-name">Guest</div>
+        <button id="logoutBtn" class="btn-ghost">Logout</button>
+      </div>
+
+      <div class="search-row">
+        <input id="searchInput" placeholder="Search by name / operator / plug…" />
+        <button id="clearSearch" class="icon-btn">✕</button>
+      </div>
+
+      <div class="toggles">
+        <label class="toggle-row">
+          <input id="toggleCoverage" type="checkbox" />
+          <span>5 km coverage</span>
+        </label>
+        <label class="toggle-row">
+          <input id="toggleHeat" type="checkbox" />
+          <span>Density heatmap</span>
+        </label>
+        <label class="toggle-row">
+          <input id="toggleUnserved" type="checkbox" />
+          <span>Unserved zones</span>
+        </label>
+      </div>
+
+      <div class="stations-header">
+        <h3>Stations</h3>
+        <div id="counts" class="muted small">—</div>
+      </div>
+    </div>
+
+    <div id="stationList" class="station-list"></div>
+  </aside>
+
+  <!-- Map -->
+  <div id="map" class="map"></div>
+
+  <!-- Route Panel (collapsible) -->
+  <div id="routePanel" class="route-panel">
+    <button id="routeToggle" class="route-toggle">▶</button>
+    <h3>Route Planner</h3>
+
+    <div class="route-controls">
+      <div class="row">
+        <button id="useGps" class="btn">Use my location</button>
+        <button id="clearStart" class="btn-ghost">Clear</button>
+      </div>
+
+      <label>Start: (click map or use GPS)</label>
+      <div id="startPreview" class="muted small">Not set</div>
+
+      <label>Destination (choose station)</label>
+      <input id="destInput" placeholder="Or click 'Set as destination' on a station" />
+
+      <div class="row">
+        <label>Range (km)</label>
+        <input id="rangeInput" type="number" value="300" min="50" />
+        <label>Safety (km)</label>
+        <input id="safetyInput" type="number" value="10" min="0" />
+      </div>
+
+      <div class="row">
+        <button id="calcRoute" class="btn primary">Calculate</button>
+        <button id="clearRoute" class="btn-ghost">Clear</button>
+      </div>
+
+      <div id="routeResult" class="route-result muted small"></div>
+
+      
+    </div>
+  </div>
+
+  <!-- Floating locate button -->
+  <button id="locateFab" class="fab" title="Use my location">📍</button>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

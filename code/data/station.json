@@ -1,0 +1,17 @@
+[
+  {"id":"TN001","name":"TotalEnergies - Bizerte RN11","lat":37.2603063,"lng":9.8301351,"power_kW":22,"plug_type":"Type 2","operator":"TotalEnergies"},
+  {"id":"TN002","name":"TotalEnergies - Jardins du Lac","lat":36.8491697,"lng":10.2657944,"power_kW":22,"plug_type":"Type 2","operator":"TotalEnergies"},
+  {"id":"TN003","name":"TotalEnergies - Grombalia A1","lat":36.6016549,"lng":10.4970249,"power_kW":50,"plug_type":"Type 2 / DC","operator":"TotalEnergies"},
+  {"id":"TN004","name":"TotalEnergies - Borjine A1","lat":35.5680472,"lng":10.6124038,"power_kW":50,"plug_type":"Type 2 / DC","operator":"TotalEnergies"},
+  {"id":"TN005","name":"TotalEnergies - El Jem A1","lat":35.2573431,"lng":10.652064,"power_kW":50,"plug_type":"Type 2 / DC","operator":"TotalEnergies"},
+  {"id":"TN006","name":"TotalEnergies - Sousse 1","lat":35.8403812,"lng":10.6221662,"power_kW":22,"plug_type":"Type 2","operator":"TotalEnergies"},
+  {"id":"TN007","name":"TotalEnergies - Hamet Jerid","lat":33.9978154,"lng":8.1715909,"power_kW":22,"plug_type":"Type 2","operator":"TotalEnergies"},
+  {"id":"TN008","name":"TotalEnergies - Tataouine 1","lat":32.9280576,"lng":10.4457442,"power_kW":22,"plug_type":"Type 2","operator":"TotalEnergies"},
+  {"id":"TN009","name":"TotalEnergies - Le Kef","lat":36.1784157,"lng":8.7032753,"power_kW":22,"plug_type":"Type 2","operator":"TotalEnergies"},
+  {"id":"TN010","name":"TotalEnergies - Sidi Bouzid","lat":35.0313317,"lng":9.463668,"power_kW":22,"plug_type":"Type 2","operator":"TotalEnergies"},
+  {"id":"TN011","name":"TotalEnergies - Hammamet","lat":36.407621,"lng":10.5607524,"power_kW":22,"plug_type":"Type 2","operator":"TotalEnergies"},
+  {"id":"TN012","name":"TotalEnergies - Gabes","lat":33.881,"lng":10.098,"power_kW":22,"plug_type":"Type 2","operator":"TotalEnergies"},
+  {"id":"TN013","name":"TotalEnergies - Djerba Houmet Essouk","lat":33.801,"lng":10.863,"power_kW":22,"plug_type":"Type 2","operator":"TotalEnergies"},
+  {"id":"TN014","name":"Total - Tunis","lat":36.85,"lng":10.2,"power_kW":22,"plug_type":"Type 2 / CCS","operator":"Total"},
+  {"id":"TN015","name":"MG Motors - Charguia","lat":36.83,"lng":10.22,"power_kW":22,"plug_type":"Type 2","operator":"MG Motors"}
+]
